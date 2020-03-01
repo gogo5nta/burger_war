@@ -5,6 +5,7 @@
 # git install
 sudo apt-get install git
 # git clone //各時のgit pathに変更
+
 git clone git clone https://github.com/OneNightROBOCON/burger_war
 
 # 環境設定
