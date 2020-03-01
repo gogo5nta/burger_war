@@ -1,3 +1,35 @@
+# --- 独自追加 ---
+・1. ROS(kinetic)のインストール   
+```
+chmod +x 01_install_ros_kinetic.sh
+./01_install_ros_kinetic.sh
+```
+
+・2. burger_warの環境構築   
+```
+# 02_setup.sh内のgit clone先を事前に変更しておく
+chmod +x 02_setup.sh
+./02_setup.sh
+```
+
+・3. aliasの設定   
+```
+gedit ~/.bashrc
+```
+で以下を追加
+```
+# ROS全般コマンド  
+alias cw='cd ~/catkin_ws'
+alias cs='cd ~/catkin_ws/src'
+alias cm='cd ~/catkin_ws && catkin_make'
+# robocon2019用コマンド  
+alias bw='cd ~/catkin_ws/src/burger_war'
+alias sim='cd ~/catkin_ws/src/burger_war && bash scripts/sim_with_judge.sh'
+alias start='cd ~/catkin_ws/src/burger_war && bash scripts/start.sh'
+# robot位置がリセット。↑のstartで再スタート  
+alias reset='rosservice call /gazebo/reset_simulation "{}"' 
+```
+
 # burger_war
 ロボットで戦車対戦をするゲームです。
 大砲で撃つ代わりに、カメラでターゲットのARマーカーを読み取ります。<BR>
