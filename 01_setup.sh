@@ -2,6 +2,11 @@
 
 # 2020.03.01 作成 T.Ishigami  from https://github.com/OneNightROBOCON/burger_war/blob/master/README.md
 
+# git install
+sudo apt-get install git
+# git clone //各時のgit pathに変更
+git clone git clone https://github.com/OneNightROBOCON/burger_war
+
 # 環境設定
 echo "export GAZEBO_MODEL_PATH=$HOME/catkin_ws/src/burger_war/burger_war/models/" >> ~/.bashrc
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
