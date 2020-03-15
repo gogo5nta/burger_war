@@ -22,7 +22,7 @@
  ```
 ![190818-03](https://user-images.githubusercontent.com/30023363/63225002-f7882d80-c206-11e9-87b6-018d44338767.jpg)  
 ### 3.2 vscodeの設定(初回)
-・拡張機能をインストールする。起動したら、左側の５個のアイコンの中で、一番したのアイコンを押し、以下の拡張機能をインストール  
+■拡張機能をインストールする。起動したら、左側の５個のアイコンの中で、一番したのアイコンを押し、以下の拡張機能をインストール  
 ・C/C++　　　　　　　　//C++本体。★必須★  
 ・C++ Intellisense　 //コード補完★必須★  
 ・C/C++ Snippets　　//コード一式を登録する機能。入れなくてもOK  
@@ -30,7 +30,11 @@
 ・Python　　　　　　　//python本体★必須★  
 ・Python for VSCode　//python用。入れたほうがいい？  
 ・ROS　　　　　　　　　//ROS用★必須★  
-・ROS snippests　　　//ROS用。入れたほうがいい  
+・ROS snippests　　　//ROS用。入れたほうがいい   
+■Git関連で次のような拡張をよく利用   
+・Git Graph　　 //Gitレポジトリの可視化、GUI操作   
+・Git History　 //Gitレポジトリのヒストリーログ可視化   
+・Git Lens　　  //いつ、誰が編集したかを行単位で表示   
 ![190818-04](https://user-images.githubusercontent.com/30023363/63225143-42ef0b80-c208-11e9-9ab1-3d1527406f47.jpg)  
 
 ### 3.3 vscodeの日本語化(必要な方)
@@ -45,10 +49,10 @@
 ・gitで落としてきたburger_warのフォルダを選択。 例
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/gogo5nta/burger_war
+git clone https://github.com/[your_git]/burger_war
 ```
 ・まずは、左側アイコンの一番上を押し、Open Folderを選択　　
-  ~/catkin_ws/src/burger_warを指定  
+  ~/catkin_ws/src/burger_warを指定
 ![190818-05](https://user-images.githubusercontent.com/30023363/63225778-0c68bf00-c20f-11e9-86fd-b803b1298e42.jpg)
 ### 4.2 c_cpp設定(初回、cpp使用時。pythonのみなら飛ばしてOK)
 ・.vscodeフォルダ内のc_cpp>proprties.jsonを選択し、以下を追加  
@@ -171,10 +175,12 @@ img = cv2.imread(os.path.dirname(__file__) + "/img.jpg", 1)
 $ git config --global user.name 'username'
 $ git config --global user.email 'username@example.com'
 ```
-### 5.2 commit
+### 5.2 commit (ローカルのリポジトリを更新)
 ・左アイコン真ん中のツリーアイコンを押し、source管理を実施。コミットはチェックボタンを押すだけ
 ![190818-11](https://user-images.githubusercontent.com/30023363/63227569-baca2f80-c222-11e9-8768-9c9f1c95c560.jpg)  
+### 5.3 push (サーバーのリポジトリを更新)
  ・サーバー上へpushする場合、…のアイコンでpushを選択　　
+   commit(Local反映) → push(サーバー反映)で、github.com/xxxxのソースも反映
 ![190818-12](https://user-images.githubusercontent.com/30023363/63227592-f36a0900-c222-11e9-84f1-8fa185fb288b.jpg)
  ・参考サイト  
  　 [VSCodeでのGitの基本操作まとめ](https://qiita.com/y-tsutsu/items/2ba96b16b220fb5913be)
