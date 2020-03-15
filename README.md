@@ -25,8 +25,8 @@ alias cm='cd ~/catkin_ws && catkin_make'
 # robocon2019用コマンド  
 alias bw='cd ~/catkin_ws/src/burger_war'
 alias sim='cd ~/catkin_ws/src/burger_war && bash scripts/sim_with_judge.sh'
-alias start         ='cd ~/catkin_ws/src/burger_war && bash scripts/start.sh'
-alias start_cheese  ='cd ~/catkin_ws/src/burger_war && bash scripts/start_cheese.sh'
+alias start='cd ~/catkin_ws/src/burger_war && bash scripts/start.sh'
+alias start_cheese='cd ~/catkin_ws/src/burger_war && bash scripts/start_cheese.sh'
 alias start_teriyaki='cd ~/catkin_ws/src/burger_war && bash scripts/start_teriyaki.sh'
 # robot位置がリセット。↑のstartで再スタート  
 alias reset='rosservice call /gazebo/reset_simulation "{}"' 
