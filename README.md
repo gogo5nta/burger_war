@@ -40,6 +40,15 @@ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 sudo apt-get update
 sudo apt-get upgrade
 ```
+・5. navigationを利用
+　~/.bashrcに以下を追加   
+  ```
+  export GAZEBO_MODEL_PATH=$HOME/catkin_ws/src/burger_war/burger_war/models/
+  ```
+  ・以下をインストール   
+  ```
+sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan  ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers  
+  ```
 
 # burger_war
 ロボットで戦車対戦をするゲームです。
